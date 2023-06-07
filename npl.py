@@ -28,7 +28,7 @@ nltk.download('omw-1.4')
 df['word_review'] = df['review'].apply(lambda x: word_tokenize(x.lower()))
 df['sent_review'] = df['review'].apply(lambda x: sent_tokenize(x.lower()))
 
-
+# removing stop words
 
 
 

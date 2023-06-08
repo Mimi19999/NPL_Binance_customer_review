@@ -33,7 +33,7 @@ df['clean_text'] = df['clean_text'].str.lower()
 print(df['clean_text'].head(5))
 
 # Check for unwanted patterns 
-unwanted_patterns = ['@', '#', 'http', 'www']
+unwanted_patterns = ['@', '#', 'http', 'www', 'binance']
 unwanted_data = df[df['clean_text'].str.contains('|'.join(unwanted_patterns))]
 print(unwanted_data)
 
